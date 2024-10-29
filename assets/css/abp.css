@@ -1,0 +1,286 @@
+/**
+ * Reference: https://css-tricks.com/snippets/css/clear-fix/
+ */
+.groupfix {
+    float: left;
+    width: 100%;
+}
+.groupfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#abp-author-box {
+    float: left;
+    margin: 15px 0;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+    width: 100%;
+}
+
+#abp-author-box #abp-author-box-gravatar {
+    float: left;
+    text-align: center;
+    width: 20%;
+}
+
+#abp-author-box #abp-author-box-detail {
+    float: left;
+    margin-left: 10px;
+    width: 77%;
+    position: relative;
+}
+
+#abp-author-box #abp-author-box-detail h3 {
+    color: #5A8FDA;
+    margin: 3px 0 3px;
+    font-size: 30px;
+    float: left;
+    width: 100%;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: "calibri", sans-serif;
+    margin-top: -15px;
+    padding-top: 10px;
+}
+
+#abp-author-box #abp-author-box-detail h3 a {
+    color: #5A8FDA;
+    box-shadow: none;
+    padding-top: 10px;
+    text-decoration: none;
+    line-height: 25px;
+    float: left;
+    margin-bottom: 5px;
+    border: none;
+    border-top: 3px solid transparent;
+    padding-top: 7px;
+    margin-top: -7px;
+}
+
+#abp-author-box #abp-author-box-detail h3 a:hover {
+    border-top: 3px solid #5A8FDA;
+    border-spacing: 30px 68px;
+}
+
+#abp-author-box #abp-author-box-gravatar img {
+    border-radius: 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 96px;
+}
+
+#abp-author-box #abp-author-box-detail .abp-social-title {
+    font-weight: 700;
+}
+#abp-author-box #abp-author-box-detail p {
+    float: left;
+    margin: 0;
+    line-height: 21px;
+    font-size: 14px;
+}
+#abp-author-box .abp-author-social,
+#abp-author-page .abp-author-social {
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+    font-weight: normal;
+    height: 33px;
+    line-height: 23px;
+    padding: 0;
+    float: right;
+    border: solid 0 #aaa;
+    text-align: left;
+    margin: 0;
+    display: block;
+    position: absolute;
+    top: -6px;
+    right: 0;
+}
+#abp-author-box .abp-author-social li,
+#abp-author-page .abp-author-social li {
+        width: 36px;
+    float: left;
+    margin: 0 -2px 0 3px !important;
+    list-style: none;
+}
+
+#abp-author-box .abp-author-social {
+    position: absolute;
+    right: 0;
+}
+
+#abp-author-box .abp-author-social li a:hover {
+    border-top: 3px solid #5A8FDA;
+}
+
+#abp-author-box .abp-author-social li a,
+#abp-author-page .abp-author-social li a {
+    display: block;
+    text-indent: -9999em;
+    position: relative;
+}
+
+#abp-author-box .abp-author-social li a:hover:before,
+#abp-author-page .abp-author-social li a:hover:before {
+    opacity: 0.8;
+}
+
+#abp-about-author {
+    padding: 10px;
+}
+
+#abp-author-box .abp-author-social li a:before,
+#abp-author-page .abp-author-social li a:before {
+    position: absolute;
+    top: 0;
+    left: 1px;
+    color: #fff;
+    font-size: 16px;
+    width: 35px;
+    height: 34px;
+    font-weight: normal;
+    content: " ";
+    background: #eee url('../img/social-icons.png') -2px -1px;
+}
+#abp-author-box .abp-author-social li a {
+    border-top: 3px solid transparent;
+    margin-bottom: -14px;
+    float: right;
+    padding-top: 4px;
+    position: relative;
+    top: -6px;
+    width: 100%;
+}
+#abp-author-box .abp-author-social li a:before {
+    top: 3px;
+}
+
+#abp-author-box .abp-author-social li.abp-author-facebook a:before,
+#abp-author-page .abp-author-social li.abp-author-facebook a:before {
+    background-position: -38px -1px;
+}
+
+#abp-author-box .abp-author-social li.abp-author-twitter a:before,
+#abp-author-page .abp-author-social li.abp-author-twitter a:before {
+    background-position: -74px -1px;
+}
+
+#abp-author-box .abp-author-social li.abp-author-googleplus a:before,
+#abp-author-page .abp-author-social li.abp-author-googleplus a:before {
+    background-position: -110px -1px;
+}
+
+#abp-author-box .abp-author-social li.abp-author-linkedin a:before,
+#abp-author-page .abp-author-social li.abp-author-linkedin a:before {
+    background-position: -146px -1px;
+}
+
+#abp-author-page .abp-author-img-social {
+    width: 625px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+#abp-author-box #abp-author-box-gravatar .avatar,
+#abp-author-page .abp-author-img-social .avatar {
+    float: none;
+}
+#abp-author-box .abp-author-img-social .abp-author-social,
+#abp-author-page .abp-author-img-social .abp-author-social {
+    text-align: center;
+    float: none;
+    margin: 3px auto;
+    width: 191px;
+    position: relative;
+    top: 3px;
+}
+
+#abp-author-page #abp-about-author .abp-author-img-social h2{
+    font-size: 34px;
+    font-weight: 700;
+    margin: 7px 0;
+    line-height: 27px;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+#abp-author-box  #abp-about-author .abp-author-img-social img {
+    margin-bottom: 6px;
+}
+
+
+#abp-author-box  #abp-before-profile-page-contents h3 {
+    font-size: 22px;
+}
+
+#abp-author-box .abp-author-post-block {
+    float: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding: 21px 0;
+}
+
+#abp-author-box .abp-author-rm-btn {
+    color: #67b7e1;
+}
+
+#abp-author-box #abp-before-profile-page-contents .abp-author-post-content .abp-author-post-title{
+    font-size: 22px;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+#abp-author-box .abp-author-post-block .abp-author-post-thumnail {
+    float: right;
+    width: 28%;
+}
+
+#abp-author-box .abp-author-post-block .abp-author-post-thumnail img {
+    max-width: 100%;
+    width: 202px;
+    height: 133px;
+    max-height: 100%;
+}
+
+#abp-author-box .abp-before-profile-page-content,
+#abp-author-page .abp-before-profile-page-content {
+    margin-bottom: 0;
+}
+
+#abp-author-box .abp-author-post-content {
+    float: left;
+    width: 70%;
+}
+
+#abp-author-box .abp-author-post-content p {
+    margin: 6px 0;
+    line-height: 20px;
+}
+
+#abp-author-box .abp-author-by-author {
+    color: #67b7e1;
+}
+
+#abp-author-page {
+    padding: 15px;
+}
+#abp-author-page.abp-author-left-content-box {
+    float: left;
+    width: 100%;
+}
+#abp-author-page #abp-about-author .abp-author-bio p {
+    margin: 0;
+    line-height: 21px;
+}
+#abp-author-page .abp-author-bio {
+    text-align: center;
+    width: 650px;
+    margin: 0 auto;
+}
+#abp-author-recent-posts-lists h3 {
+    border-bottom: 1px solid #eee;
+    margin: 10px 0 20px;
+    font-size: 20px;
+}
